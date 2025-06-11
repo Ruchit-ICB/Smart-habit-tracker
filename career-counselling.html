@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Counselling</title>
+  <link rel="stylesheet" href="career-counselling.css"/>
+</head>
+<body>
+  <header>
+    <h1>Career Counselling Hub</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Your Career, Our Guidance</h2>
+      <p>Chat with our expert bot and take the next step in your career journey.</p>
+      <button onclick="window.location.href='chatbot.html'">Start Chat</button>
+    </section>
+
+    <section class="info">
+      <h3>What We Offer</h3>
+      <div class="cards">
+        <div class="card">Career Planning</div>
+        <div class="card">Resume Review</div>
+        <div class="card">Mock Interviews</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Chatbot -->
+  <div id="chat-container" class="hidden">
+    <div id="chat-header">
+      <span>CareerBot</span>
+      <button id="cross" onclick="closeChat()">✖</button>
+    </div>
+    <div id="chat-body">
+      <!-- Messages will be handled by external JS -->
+    </div>
+    <div id="chat-input">
+      <input type="text" id="userInput" placeholder="Type your question..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  
+  <script src="career-counselling.js"></script>
+</body>
+</html>
